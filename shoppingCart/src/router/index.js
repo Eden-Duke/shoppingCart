@@ -1,15 +1,20 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Hello from '@/components/Hello'
+import goods from '@/components/goods'
 
 Vue.use(Router)
+
+import shopCart from '@/components/shopCart.vue'
 
 export default new Router({
   routes: [
     {
       path: '/',
-      name: 'Hello',
-      component: Hello
+      component: goods
+    },
+    {
+      path: '/shopCart',
+      component: shopCart
     }
   ]
 })
